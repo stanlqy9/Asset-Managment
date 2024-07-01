@@ -54,7 +54,9 @@ ROOT_URLCONF = 'AssetManagementSite.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+            BASE_DIR / "homepage" / "templates"
+            ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
