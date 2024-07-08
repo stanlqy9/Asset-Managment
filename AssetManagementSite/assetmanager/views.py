@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.shortcuts import redirect
-from django.http import HttpResponseNotFound
+from django.http import HttpResponseNotFound, Http404
 
 
 def dashboard(request):
@@ -16,6 +16,5 @@ def page_redirect(request):
     return redirect("dashboard")
 
 def throw_error(request, other_path):
-    response_data = render(request, "assetmanager/404.html")
-    return HttpResponseNotFound(response_data)
+    raise Http404()
 
