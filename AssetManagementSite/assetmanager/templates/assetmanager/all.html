@@ -1,5 +1,11 @@
 {% extends "base_structure.html"%}
 
+{% load static %}
+
+{% block css_files %}
+<link rel="stylesheet" type="text/css" href="{% static 'assetmanager/all.css'%}">
+{% endblock %}
+
        {% block page_title %}
 	    All Assets
 		{% endblock %}
