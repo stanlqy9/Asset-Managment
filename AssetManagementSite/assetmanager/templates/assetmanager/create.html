@@ -1,0 +1,43 @@
+{% extends "base_structure.html"%}
+
+{% block page_title %}
+Create
+{% endblock %}
+
+{% block first_header %} 
+Hello!
+{% endblock %}
+
+{% block second_header %}
+Create an Asset
+{% endblock %}
+        
+        {% block content %}
+        <form action="" method="post">
+            <label for="asset-tag">Asset Tag:</label>
+            <input type="text" id="asset-tag" name="asset-tag" required><br><br>
+
+            <label for="display-name">Display Name:</label>
+            <input type="text" id="display-name" name="display-name" required><br><br>
+
+            <label for="serial-number">Serial Number:</label>
+            <input type="text" id="serial-number" name="serial-number" required><br><br>
+
+            <label for="purchase-date">Purchase Date:</label>
+            <input type="date" id="purchase-date" name="purchase-date" required><br><br>
+
+            <label for="purchase-cost">Purchase Cost:</label>
+            <input type="number" id="purchase-cost" name="purchase-cost" required><br><br>
+
+            <label for="purchase-location">Purchase Location:</label>
+            <input type="text" id="purchase-location" name="purchase-location" required><br><br>
+
+            <label for="warranty-expiration">Warranty Expiration:</label>
+            <input type="date" id="warranty-expiration" name="warranty-expiration" required><br><br>
+
+            <label for="notes">Notes:</label>
+            <textarea id="notes" name="notes" rows="4" cols="50"></textarea><br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+       {% endblock %}

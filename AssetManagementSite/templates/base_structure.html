@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block page_title %} AssetFlow {% endblock %}</title>      {# This title should be dynamic #}
+    <link rel="stylesheet" href="dashboard.css">     {# This stylesheet should be dynamic #}
+</head>
+
+<body>
+    
+    <nav>
+        <ul>
+            <li><a href="#dashboard">Dashboard</a></li>
+            <li>
+                <a>Assets</a>
+                <ul>
+                    <li><a href="#create-asset">Create an Asset</a></li>
+                    <li><a href="#all-assets">All Assets</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="topnav">
+        <img src="" alt="" id="logo">
+    </div>
+
+    
+
+    <div class="content">
+        <div id="headers">
+            <h1> {% block first_header %} {% endblock %} </h1>     {# This heading should be dynamic #}
+            <h2> {% block second_header %} {% endblock %} </h2>    {# This subheading should be dynamic #}
+        </div>
+        
+        <div>
+        {% block content %} {% endblock %}
+        </div>
+        
+    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+{% extends "base_structure.html"%}
+
+       {% block page_title %}
+	    All Assets
+		{% endblock %}
+
+		{% block first_header %} 
+		Hello!
+		{% endblock %}
+
+		{% block second_header %}
+		All Assets
+		{% endblock %}
+
+        {% block content %}
+        <table>
+			<tr>
+				<th>Asset Tag</th>
+				<th>Display Name</th>
+				<th>Serial Number</th>
+				<th>Purchase Date</th>
+				<th>Purchase Cost</th>
+				<th>Assigned To</th>
+				<th>Warranty Expiration</th>
+				<th>Notes</th>
+			</tr>
+			<tr>
+				<td>0001</td>
+				<td>Macbook Pro 13inch</td>
+				<td>HQL3TT</td>
+				<td>2021-01-01</td>
+				<td>2000</td>
+				<td>John Doe</td>
+				<td>2023-01-01</td>
+				<td>notes go here</td>
+			</tr>
+			<tr>
+				<td>0002</td>
+				<td>Dell Latitude</td>
+				<td>HPSC3T</td>
+				<td>2021-01-01</td>
+				<td>1500</td>
+				<td>Jane Doe</td>
+				<td>2023-01-01</td>
+				<td>notes go here</td>
+			</tr>
+		</table>
+	{% endblock %}
