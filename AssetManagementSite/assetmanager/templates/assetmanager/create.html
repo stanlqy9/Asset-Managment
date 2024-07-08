@@ -1,7 +1,7 @@
 {% extends "base_structure.html"%}
 
 {% block page_title %}
-Create
+Create an Asset
 {% endblock %}
 
 {% block first_header %} 
@@ -13,6 +13,7 @@ Create an Asset
 {% endblock %}
         
         {% block content %}
+        <div class = "create-form">
         <form action="" method="post">
             <label for="asset-tag">Asset Tag:</label>
             <input type="text" id="asset-tag" name="asset-tag" required><br><br>
@@ -40,4 +41,5 @@ Create an Asset
 
             <input type="submit" value="Submit">
         </form>
+        </div>
        {% endblock %}
