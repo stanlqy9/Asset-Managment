@@ -1,8 +1,9 @@
 {% extends "base_structure.html"%}
 {% load static %}
 
+
 {% block css_files %}
-<link rel="stylesheet" type="text/css" href="{% static 'assetmanager/dashboard.css' %}">
+<link rel="stylesheet" href="{% static 'assetmanager/dashboard.css' %}">
 {% endblock %}
 
 {% block page_title %}
@@ -18,11 +19,11 @@ Dashboard
 {% endblock %} 
 
 {% block content %}
-        <div id="box1">
-            <h3>Number of assets: </h3>
+        <div id="boxone">
+            <h3>Number of assets: </h3>  
         </div>
 
-        <div id="box2"> 
+        <div id="boxtwo"> 
             <h3>Value of assets: </h3>
         </div>
 {% endblock %} 
