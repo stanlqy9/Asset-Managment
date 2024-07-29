@@ -1,0 +1,58 @@
+{% extends "base_structure.html"%}
+{% load static %}
+
+{% block css_files %}
+<link rel="stylesheet" href="{% static 'assetmanager/asset_details.css' %}">
+{% endblock %}
+
+{% block page_title %}
+{{ asset.display_name}}
+{% endblock %}
+
+{% block first_header %}
+{{ asset.display_name }}
+{% endblock %}
+
+{% block second_header %}
+{{ asset.asset_tag }}
+{% endblock %}
+
+{% block content %}
+<div id="asset-details">
+    <table>
+        <tr>
+            <th>Asset Tag</th>
+            <td>{{ asset.asset_tag }}</td>
+        </tr>
+        <tr>
+            <th>Display Name</th>
+            <td>{{ asset.display_name }}</td>
+        </tr>
+        <tr>
+            <th>Serial Number</th>
+            <td>{{ asset.serial_number }}</td>
+        </tr>
+        <tr>
+            <th>Purchase Date</th>
+            <td>{{ asset.purchase_date }}</td>
+        </tr>
+        <tr>
+            <th>Purchase Cost</th>
+            <td>{{ asset.purchase_cost }}</td>
+        </tr>
+        <tr>
+            <th>Assigned To</th>
+            <td>{{ asset.assigned_to }}</td>
+        </tr>
+        <tr>
+            <th>Warranty Expiration</th>
+            <td>{{ asset.warranty_expiration }}</td>
+        </tr>
+        <tr>
+            <th>Notes</th>
+            <td>{{ asset.notes }}</td>
+        </tr>
+    </table>
+</div>
+{% endblock %}
+    

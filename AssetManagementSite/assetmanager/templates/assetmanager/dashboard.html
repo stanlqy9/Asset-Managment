@@ -20,10 +20,10 @@ Dashboard
 
 {% block content %}
         <div id="boxone">
-            <h3>Number of assets: </h3>  
+            <h3>Number of assets: {{ asset_count }} </h3>  
         </div>
 
         <div id="boxtwo"> 
-            <h3>Value of assets: </h3>
+            <h3>Value of assets: {{ total_purchase_cost }}</h3>
         </div>
 {% endblock %} 
